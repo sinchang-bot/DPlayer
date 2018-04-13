@@ -6,23 +6,19 @@
   "style": "dist/DPlayer.min.css",
   "scripts": {
     "start": "npm run dev",
-    "build": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --progress --display-error-details --colors",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack/dev.config.js --watch --colors",
-    "test": "eslint src webpack"
+    "build":
+      "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --progress --display-error-details --colors",
+    "dev":
+      "cross-env NODE_ENV=development webpack-dev-server --config webpack/dev.config.js --watch --colors",
+    "test": "eslint src webpack",
+    "cypress:open": "cypress open"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "repository": {
     "url": "git+https://github.com/DIYgod/DPlayer.git",
     "type": "git"
   },
-  "keywords": [
-    "player",
-    "danmaku",
-    "video",
-    "html5"
-  ],
+  "keywords": ["player", "danmaku", "video", "html5"],
   "author": "DIYgod",
   "license": "MIT",
   "bugs": {
@@ -38,6 +34,7 @@
     "babel-preset-env": "^1.6.1",
     "cross-env": "^5.1.3",
     "css-loader": "^0.28.9",
+    "cypress": "^2.1.0",
     "eslint": "^4.18.1",
     "eslint-loader": "^1.9.0",
     "exports-loader": "^0.7.0",
