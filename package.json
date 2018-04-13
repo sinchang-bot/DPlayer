@@ -11,7 +11,8 @@
     "dev":
       "cross-env NODE_ENV=development webpack-dev-server --config webpack/dev.config.js --watch --colors",
     "test": "eslint src webpack",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "files": ["dist"],
   "repository": {
