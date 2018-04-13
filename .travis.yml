@@ -10,6 +10,6 @@ cache:
 install:
   - npm install
 before_script:
-  - npm run dev -- --silent &  
+  - npm run dev &  
 script:
   - $(npm bin)/cypress run --record
